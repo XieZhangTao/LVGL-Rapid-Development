@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "lv_examples.h": "c",
+        "lv_example_style.h": "c",
+        "lv_example_widgets.h": "c",
+        "fs_lv_utils.h": "c",
+        "fs_lv_scene.h": "c",
+        "fs_list.h": "c",
+        "fs_lv_conf.h": "c",
+        "stddef.h": "c",
+        "fs_lvgl.h": "c",
+        "ui_scene.h": "c",
+        "lvgl.h": "c",
+        "emb_lv_utils.h": "c"
+    },
+    "inlineChat.defaultModel": "Auto (copilot)"
+}
