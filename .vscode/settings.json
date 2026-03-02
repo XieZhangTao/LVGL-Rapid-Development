@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "fs_lv_scene.h": "c",
+        "fs_lv_utils.h": "c",
+        "fs_lv_img.h": "c",
+        "emb_lv_utils.h": "c",
+        "emb_lv_scene_declaration.h": "c",
+        "emb_lv_conf.h": "c",
+        "emb_lv_scene.h": "c"
+    }
+}
