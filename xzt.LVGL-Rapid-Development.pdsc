@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<package schemaVersion="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="PACK.xsd">
+    <vendor>xzt</vendor>
+    <name>LVGL Rapid Development</name>
+    <description>Help users speed up the development of LVGL interface</description>
+    <url></url>
+    <supportContact>genuine2001@163.com</supportContact>
+ 
+    <releases>
+        <release version="1.0.0">
+            Revision v1.0.0
+            - Initial Version 
+        </release>
+   </releases>
+
+    <components>
+        <component Cclass="LVGL Rapid Development" Cgroup="Core" >
+        <files>
+            <file category="sourceC"    name="emb_lvgl.c"/>
+            <file category="header"     name="emb_lvgl.h"/>
+            <file category="sourceC"    name="emb_lv_scene.c"/>
+            <file category="header"     name="emb_lv_scene.h"/>
+            <file category="header"     name="emb_lv_list.h"/>
+            <file category="header"     name="emb_lv_utils.h"/>
+            <file category="sourceC"    name="emb_lv_language.c"/>
+            <file category="header"     name="emb_lv_language.h"/>
+            <file category="header"     name="emb_lv_scene_declaration.h"/>
+            <file category="preIncludeGlobal" name="emb_lv_conf.h" attr="config"/>
+        </files>
+        <Pre_Include_Global_h>
+#define ___EMB_LV_CONF_SKIP_HEADER___
+        </Pre_Include_Global_h>
+        <RTE_Components_h>
+#define __EMB_USE_MID_LVGL__ 1
+        </RTE_Components_h>
+        </component>
+
+        <component Cclass="LVGL Rapid Development" Cgroup="Scene" maxInstances="50">
+          <description>A template for scene</description>
+          <files>
+            <file category="sourceC"     name="emb_lv_scene_template.c" attr="config" />
+            <file category="header"      name="emb_lv_scene_template.h" attr="config" />
+          </files>
+          <RTE_Components_h>
+#define __RTE_Acceleration_LVGL_Scene%Instance%__
+          </RTE_Components_h>
+        </component>
+
+    </components>
+
+</package>
